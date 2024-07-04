@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Login Form</h1>
+    <form action="dashboard.html" method="post" enctype="multipart/form-data">
+      <div>
+        <input
+          required
+          name="username"
+          type="text"
+          placeholder="Enter Username"
+        />
+      </div>
+
+      <div>
+        <input
+          required
+          name="passcode"
+          type="password"
+          placeholder="Enter password"
+        />
+      </div>
+      <!-- Radio buttons -->
+      <div>
+        <input type="radio" checked name="gender" id="m" />
+        <label for="m"> Male </label>
+        <input type="radio" name="gender" id="f" />
+        <label for="f"> Female</label>
+      </div>
+      <!-- Radion Buttons End here -->
+      <!-- Checkbox Starts Here -->
+      <div>
+        <p>Select your favourite cities!</p>
+        <input type="checkbox" name="" id="" />
+        <label for="">Nawabshah</label>
+        <input type="checkbox" name="" id="" />
+        <label for="">Hyderabad</label>
+        <input type="checkbox" name="" id="" />
+        <label for="">Karachi</label>
+      </div>
+      <!-- Check Box ends here -->
+      <!-- SELECT BOX STARTS HERE  -->
+      <div>
+        <p>Which one is your favourite vehicle?</p>
+        <select name="" id="">
+          <option value="" selected>Select...</option>
+          <optgroup label="Cars">
+            <option value="mehran">Mehran</option>
+            <option value="cultus">Cultus</option>
+            <option value="alto">Alto</option>
+          </optgroup>
+
+          <optgroup label="Bikes">
+            <option value="cd70">CD 70</option>
+            <option value="cd125">CD 125</option>
+            <option value="yamaha">Yamaha</option>
+          </optgroup>
+        </select>
+      </div>
+      <!-- SELECT BOX ENDS HERE -->
+
+      <!-- FILE OR IMAGE UPLOADING -->
+      <div class="">
+        <input type="file" />
+      </div>
+      <!-- FILE OR IMAGE UPLOADING -->
+
+      <div>
+        <input type="submit" value="Login" />
+      </div>
+    </form>
+  </body>
+</html>
