@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-image: url("https://picsum.photos/1500");
+      }
+
+      div {
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="ans">Result</h1>
+    <script>
+      let answer = document.querySelector(".ans");
+      let num1 = prompt("Enter First Number");
+      let num2 = prompt("Enter Second Number");
+
+      let sum = Number(num1) + Number(num2);
+
+      answer.innerText =
+        "The sum of " + num1 + " and " + num2 + " is " + "(" + sum + ")";
+    </script>
+  </body>
+</html>
