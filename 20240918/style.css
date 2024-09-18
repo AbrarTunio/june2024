@@ -1,0 +1,22 @@
+.super {
+    width: 250px;
+    height: 250px;
+    border: 1px solid;
+    border-radius: 5px ;
+    margin: 250px auto;
+    transition: 1s;
+
+}
+
+.super{
+    transform: scale(1.5);
+    
+}
+
+
+.super:hover {
+    transform: scale(1);
+    transform: rotate(45deg);
+    /* transform: skew(20deg); */
+    transition: 1s;
+}
