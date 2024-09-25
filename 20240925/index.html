@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Z-Index</title>
+    <style>
+      html {
+        background-color: burlywood;
+      }
+      /* viewport */
+      body {
+        background-color: whitesmoke;
+        height: 540px;
+        padding-left: 10px;
+        padding-top: 10px;
+      }
+      .block1,
+      .block2,
+      .float,
+      .position {
+        width: 150px;
+        height: 100px;
+      }
+      .block1 {
+        background-color: pink;
+        /* display: none; */
+        position: relative;
+        z-index: 100;
+      }
+      .block2 {
+        /* display: none; */
+        background-color: red;
+        margin: -20px 0 0 20px;
+        /* position: relative;
+        z-index: 101; */
+      }
+      .float {
+        /* display: none; */
+        background-color: lightblue;
+        float: left;
+        position: relative;
+        z-index: 1;
+        margin: -60px 0 0 80px;
+      }
+
+      .inline {
+        /* display: none; */
+        background-color: navy;
+        color: white;
+        /* margin-left: 10px; */
+        padding: 5px;
+      }
+
+      .position {
+        /* display: none; */
+        background-color: orange;
+        position: relative;
+        left: 120px;
+        top: -150px;
+        width: 300px;
+        height: 200px;
+        z-index: 5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="block1">Block 1</div>
+    <div class="block2">Block 2</div>
+
+    <div class="float">
+      <p style="margin-top: 0">Block Element inside floated</p>
+      <span class="inline">Inline with floated</span>
+    </div>
+
+    <div class="position">Position Element</div>
+  </body>
+</html>
