@@ -1,0 +1,74 @@
+
+*, html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    padding: 20px;
+}
+
+.top-row{
+    position: absolute;
+    height: 100px;
+    border: 1px solid ;
+    width: calc( 100% - 40px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: larger;
+
+    .menu ul {
+        display: flex;
+      
+        li {
+            padding: 10px 15px;
+            margin: 2px;
+            border-radius: 5px ;
+            background-color: darkcyan;
+            a{
+                color: lightgrey;
+            } 
+        }
+
+        list-style-type: none;
+        a{
+            text-decoration: none;
+        } 
+    }
+}
+
+
+
+
+.row{
+    border: 1px solid ;
+    border-radius: 5px;
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    .para{
+        width: 50%;
+        text-align: justify;
+    }
+}
+
+
+.left{
+    padding: 5px;
+    width: 60%;
+}
+
+.right-img{
+    background-color: orange;
+    height: 100%;
+    background-image: url("https://picsum.photos/700");
+    width: 40%;
+}
+
+.inner-child{
+    margin-top: 15px;
+}
