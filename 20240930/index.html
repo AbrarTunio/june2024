@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icons and Responsive Websites</title>
+    <link rel="icon" href="https://picsum.photos/50" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container{
+            padding: 50px;
+            border: 3px solid red ;
+        }
+
+        .row{
+            border: 0.5px dotted gray;
+            border-radius: 2px ;
+            padding: 20px;
+            display: flex;
+        }
+
+        .col{
+            border: 1px solid;
+            height: inherit;
+            width: 50%;
+        }
+
+        @media ( max-width : 576px ) {
+            .row{
+                display: block;
+            }
+            .col {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <i class="fa-brands fa-facebook"></i> -->
+    <div class="container">
+        <div class="row">
+            <div class="col"> <h1>My Subheadings</h1> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur accusamus qui magnam, libero error eius ad officia. Excepturi quidem perspiciatis labore tempora animi eos, maxime, harum pariatur eligendi eum aperiam!
+            Exercitationem veniam est tenetur. Explicabo autem qui atque voluptas eos dignissimos voluptate ducimus, laboriosam iure id deleniti harum in deserunt odio vero libero itaque eum perferendis illum iste dolore sequi!
+            Vitae illo ipsum, quis maxime facilis earum sunt? Ut, recusandae? Cupiditate commodi officiis autem, sint molestiae, corrupti atque, reprehenderit ab debitis consectetur sequi esse blanditiis ducimus ratione aspernatur expedita porro. </p>
+            <button>Click me</button>    
+        </div>
+            <div class="col"> <h1>My Subheadings</h1> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur accusamus qui magnam, libero error eius ad officia. Excepturi quidem perspiciatis labore tempora animi eos, maxime, harum pariatur eligendi eum aperiam!
+            Exercitationem veniam est tenetur. Explicabo autem qui atque voluptas eos dignissimos voluptate ducimus, laboriosam iure id deleniti harum in deserunt odio vero libero itaque eum perferendis illum iste dolore sequi!
+            Vitae illo ipsum, quis maxime facilis earum sunt? Ut, recusandae? Cupiditate commodi officiis autem, sint molestiae, corrupti atque, reprehenderit ab debitis consectetur sequi esse blanditiis ducimus ratione aspernatur expedita porro. </p>
+            <button>Click me</button>    
+        </div>
+        </div>
+    </div>    
+
+    <!-- All My Scripts goes here -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
