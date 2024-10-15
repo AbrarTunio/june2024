@@ -1,0 +1,8 @@
+.bg-image{
+    background-image: url('https://picsum.photos/1500');
+    background-position: center;
+}
+
+.my-overlay{
+    background-color: rgba(202, 206, 209, 0.328);
+}
