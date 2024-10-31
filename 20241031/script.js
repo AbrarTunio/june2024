@@ -16,3 +16,7 @@
 let myName = true
 
 console.log( !myName )
+
+// Home work
+
+// https://abrartunio.github.io/time-exercises/
