@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .active{
+            background-color: gold;
+        }
+        .center{
+            text-align: center;
+            font-size: 20px;
+            transition: 1s;
+        }
+
+    </style>
+</head>
+<body>
+    <p id="you" class="active">Something</p>
+
+    <script>
+        let mypee = document.querySelector('p')
+        // let pee = document.querySelector('#you')
+        // let pee = document.querySelector('.active')
+
+        // to access content
+        console.log( mypee.innerText )
+        console.log( mypee.getAttribute('id') )
+        console.log( mypee.getAttribute('class') )
+
+        mypee.setAttribute('id' , 'meandonlyme')
+
+        console.log( mypee.getAttribute('id') )
+
+        mypee.classList.toggle('center')
+
+
+
+    </script>
+</body>
+</html>

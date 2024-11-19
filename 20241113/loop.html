@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+
+    </main>
+    <script>
+        // Ascending loop
+        
+        // for( let idx = 1; idx <= 10 ; idx = idx + 1 ){
+        //     console.log("Hello World" , idx)
+        // }
+
+        // Decending Loop
+        // for( let idx = 10; idx >= 0 ; idx = idx - 1 ){
+        //     console.log("Hello World" , idx)
+        // }
+        let idx = 1
+        let main = document.querySelector('main')
+        
+        friends = ['Shenila' , 'Dua', 'Uzair', 'Arooba' , 'Zeeshan']
+        
+        while( idx < 5 ){
+            element = document.createElement('div')
+            element.innerHTML = `
+            <div style='border:1px solid ; padding:4px'>
+                <h3>${friends[idx]} ${idx}</h3>
+                <p>Somthing good about your life </p>
+                <button>Click Me</button>
+            </div>`
+            main.append(element)
+            
+            idx++
+        }
+        
+
+    </script>
+</body>
+</html>

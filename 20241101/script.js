@@ -1,20 +1,25 @@
-let x = prompt("Enter a name");
+x = 1
+y = 15
+z = 3 % 3
 
-if ( x == "Abrar"  ){
-    console.log(x, "is a teacher")
+if ( "0" !== 0  ){
+    console.log("You got it!")
+}
+if ( z == x ){
+    console.log("You are awesome")
+}
+if (z != 1){
+    console.log("Your are genious")
 }
 
-if (x != "Abrar"){
-    console.log(x, "is a student")
-}
 
-if (x != "Uzair"){
-    console.log(x , "is brilliant student")
-}
 
-if (x == "Uzair"){
-    console.log(x , "is extra")
 
-}
 
-console.log("Done")
+
+
+
+
+
+
+
