@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            border-radius:50% ;
+            border: 1px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section{
+            width: 50px;
+        }
+
+        .on{
+            background-color: orange;
+        }
+
+        /* .off{
+            background-color: antiquewhite;
+            border: 0.5px solid;
+        } */
+
+    </style>
+    
+</head>
+<body>
+    <div class="on">
+        <section></section>
+    </div>
+    <button onclick="turnOn()">ON</button>
+    <button onclick="turnOff()">OFF</button>
+    
+    <button id="toggle" onclick="clicky()">Toggle</button>
+</body>
+</html>
