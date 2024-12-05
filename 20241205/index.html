@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            padding: 5px;
+            border: 1px solid maroon;
+            border-radius: 5px ;
+            display: none;
+        }
+        .active{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <button id="c">Chemistry</button>
+    <button id="p">Physics</button>
+    <button id="m">Mathematics</button>
+    <div class="row">
+        <section class="cc active">
+            <h1>Chemistry</h1>
+            <p>Study abotu chemicals and their relations, Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quas molestias, nulla corporis quibusdam vitae molestiae rerum animi asperiores sed et. Repellendus corrupti deserunt suscipit quasi, omnis eaque a perferendis.</p>
+        </section>
+        <section class="pc">
+            <h1>Physics</h1>
+            <p>Physics is about matter and energy, Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quas molestias, nulla corporis quibusdam vitae molestiae rerum animi asperiores sed et. Repellendus corrupti deserunt suscipit quasi, omnis eaque a perferendis.</p>
+        </section>
+        <section class="mc">
+            <h1>Mathematics</h1>
+            <p>Mathemtics is baout jinns, Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quas molestias, nulla corporis quibusdam vitae molestiae rerum animi asperiores sed et. Repellendus corrupti deserunt suscipit quasi, omnis eaque a perferendis.</p>
+        </section>
+
+    </div>
+
+
+
+    <script>
+        let cbtn = document.querySelector('#c')
+        let pbtn = document.querySelector('#p')
+        let mbtn = document.querySelector('#m')
+
+        let cc = document.querySelector('.cc')
+        let pc = document.querySelector('.pc')
+        let mc = document.querySelector('.mc')
+
+        function changeBehaviour( a , b , c ){
+            a.classList.add('active')
+            b.classList.remove('active')
+            c.classList.remove('active')
+        }
+
+        cbtn.addEventListener( 'click' , ()=>{changeBehaviour( cc , pc , mc  )}  )
+        pbtn.addEventListener( 'click' , ()=>{ changeBehaviour( pc , cc , mc  ) })
+        mbtn.addEventListener( 'click' , ()=> { changeBehaviour( mc , pc , cc  ) })
+
+        
+    </script>
+</body>
+</html>
